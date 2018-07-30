@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.meituan'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "com.facebook.nifty:nifty-core:0.23.0",
+            "org.apache.thrift:libthrift:0.11.0"
+    )
+}
